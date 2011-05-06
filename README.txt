@@ -10,9 +10,16 @@ Created with these commands:
     git svn fetch
     git gc
     git push origin master
-    
-    git co -b svn trunk
+
+    git checkout -b svn trunk
     git push origin svn:refs/heads/svn
     git fetch origin
     git config branch.svn.remote origin
     git config branch.svn.merge refs/heads/svn
+
+To update with latest svn commits:
+
+    git checkout svn
+    git svn rebase
+    git checkout master
+    git push origin
