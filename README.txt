@@ -21,5 +21,6 @@ To update with latest svn commits:
 
     git checkout svn
     git svn rebase
-    git checkout master
     git push origin
+    git checkout master
+    git merge svn
